@@ -1,0 +1,230 @@
+body {
+  background: white;
+}
+
+#hero {
+  width: 100%;
+  height: 125vh;
+  background: url("../../assets/img/agf.jpg") center / cover no-repeat;
+}
+
+@media (min-width: 768px) {
+  #hero {
+    background: url("../../assets/img/agf.jpg") center / cover no-repeat;
+  }
+}
+
+.navbar-brand {
+  width: 10px;
+  height: 4px;
+  color: var(--bs-red);
+  background: url("../../assets/img/mask.jpg");
+}
+
+#navcol-1 {
+  font-size: 18px;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  #navcol-1 {
+    font-size: 22px;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+#header-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  color: #b22222;
+float: left;
+ margin-left:535px;
+ margin-top: 5px;
+  font-weight:600;
+}
+
+#subhead1 {
+  color: #ffeb00;
+  font-family: Montserrat, sans-serif;
+  font-size: 60px;
+  margin-top:70px;
+  font-weight: 900;
+opacity: 2;
+float: left;
+margin-left:195px;
+padding-bottom: 90px;
+  font-weight: bolder;
+}
+
+
+#subhead4 {
+  color: #1b1b1b;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  margin-top: 290px;
+
+float: left;
+margin-left:125px;
+  font-weight:bolder;
+}
+
+
+@media (min-width: 768px) {
+  #header-title {
+    font-size: 60px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  #subhead1 {
+    font-size: 40px;
+    margin-right: 5%;
+  }
+}
+
+#testimonials{
+
+  background-color: white;
+  text-align: left;
+  color: yellow;
+}
+.carousel-item{
+  padding: 7% 8%;
+}
+
+
+#press{
+    background-color: white;
+    padding-bottom:3%;
+    text-align: center;
+}
+.zogo{
+  margin: 30px 70px 30px;
+  width: 22%;
+  height: 190px;
+}
+.zogo:hover{
+  transform:scale(1.2);
+}
+.logo1{
+  margin: 10px 20px 30px;
+  width: 12%;
+  height: 50px;
+}
+.logo2{
+  margin: 10px 20px 30px;
+  width: 12%;
+  height: 100px;
+}
+.logo3{
+  margin: 10px 20px 30px;
+  width: 12%;
+  height: 120px;
+}
+.logo4{
+  margin: 10px 20px 30px;
+  width: 12%;
+  height: 50px;
+}
+.bandas{
+  margin-top: 20px;
+  width: 110%;
+  height: 300px;
+
+}
+.bandas:hover{
+  transform: scale(1.3);
+}
+#donate-btn {
+  background-color: blue;
+
+  border-radius: 9px;
+  color: blue;
+  border: 184px 215px blue ;
+  font-size: 236px;
+  float: right;
+
+
+  font-family: 'Montserrat';
+
+}
+#donate-btn:hover{
+  transform: scale(1.3);
+}
+
+@media (min-width: 768px) {
+  .nav-lap {
+    margin-right: 4%;
+    margin-left: 4%;
+
+  }
+}
+
+@media (min-width: 768px) {
+  #donate-btn {
+    margin-right: 43%;
+    font-size: 40px;
+  margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-lap {
+    font-size: 10px;
+    height: 80px;
+  }
+}
+
+.about-header {
+  color: #fed049;
+  font-family: 'Montserrat';
+  text-align: left;
+  margin-left: 10px;
+  /*width: 70%;*/
+}
+
+.about {
+  padding: 2%;
+  margin-left: 1px;
+  font-family: 'Montserrat';
+  width: 70%;
+  background: rgba(255,255,255,0);
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .about-covp {
+    font-size: 35px;
+
+  }
+}
+
+p.about-text {
+  color: rgb(255,255,255);
+  font-size: 21px;
+  text-align: left;
+    margin-left: 2px;
+}
+
+@media (min-width: 768px) {
+  p.about-text {
+    font-size: 18px;
+    font-weight: 800;
+
+  }
+}
+
+.help-pointers {
+  background: blue;
+  background: linear-gradient(135deg, #282846, blue);
+}
+
+.nav-lap {
+  text-align: center;
+  background-color: white;
+}

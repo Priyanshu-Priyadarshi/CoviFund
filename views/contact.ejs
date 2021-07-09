@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+<nav class="navbar navbar-light navbar-expand-md nav-lap">
+    <div class="container-fluid"><a class="navbar-brand" href="#" style="background: url(&quot;assets/img/mask.jpg&quot;) center / 68% no-repeat;width: 120px;margin: 0;padding: 0;height: 120px;border-radius: 0;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active head-link" href="/" style="color: #007580;">Home</a></li>
+
+                <li class="nav-item"><a class="nav-link active head-link" href="/ourSupport" style="color: #007580;">Media</a></li>
+                    <li class="nav-item"><a class="nav-link active head-link" href="/about" style="color: #007580;">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/contact" style="color: #007580;">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="contact-clean col-sm-12 col-md-12 ite" style="background: url(&quot;assets/img/RDES.jpg&quot;) right / cover no-repeat;">
+    <form class="contact-form" action="mailto:rockshunter223@gmail.com" method="post" enctype="text/plain">
+        <h2 class="text-center" style="color: blue;">Contact Us</h2>
+        <div class="mb-3"><input class="form-control" type="text" name="Name" placeholder="Name"></div>
+        <div class="mb-3"><input class="form-control" type="email" name="Email" placeholder="Email"></div>
+        <div class="mb-3"><textarea class="form-control" name="Message" placeholder="Message" rows="14"></textarea></div>
+        <div class="mb-3"><button class="btn btn-primary" id="submit-btn" type="submit">send </button></div>
+    </form>
+</section>
+<%- include('partials/footer'); -%>
