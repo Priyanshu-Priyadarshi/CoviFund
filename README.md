@@ -8,18 +8,18 @@
 
 ## Screenshots
 
-![frontpage](images/Frontpage.jpg)
-![donatedashboard](images/Doanteddashboard.png)
-![precautions](images/precautions.png)
-![testimonials](images/testimonials.png)
-![press](images/press.png)
-![media](images/media.png)
-![aboutus](images/aboutus.png)
-![contactus](images/contactus.png)
-![contactus](images/PaymentGateway_1.png)
-![Payment1](images/PaymentGateway_2.png)
-![Payment2](images/PaymentGateway_3.png)
-![Payment3](images/PaymentGateway_4.png)
+![frontpage](public/assets/img/Frontpage.png)
+![donatedashboard](public/assets/img/Doantedashboard.png)
+![precautions](public/assets/img/precautions.png)
+![testimonials](public/assets/img/testimonials.png)
+![press](public/assets/img/press.png)
+![media](public/assets/img/media.png)
+![aboutus](public/assets/img/aboutus.png)
+![contactus](public/assets/img/contactus.png)
+![PaymentGateway_1](public/assets/img/PaymentGateway_1.png)
+![PaymentGateway_2](public/assets/img/PaymentGateway_2.png)
+![PaymentGateway_3](public/assets/img/PaymentGateway_3.png)
+![PaymentGateway_4](public/assets/img/PaymentGateway_4.png)
 
 
 ---

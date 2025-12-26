@@ -23,6 +23,3 @@ build/
 # Misc
 coverage/
 *.log
-
-# Ignore main images folder
-/images/
