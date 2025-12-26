@@ -24,13 +24,42 @@
                 </div>
                 <div class="col item social"><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
             </div>
-            <p class="copyright">CoviFund © 2021</p>
+            <p class="copyright">CoviFund © <%= new Date().getFullYear() %></p>
         </div>
     </footer>
 </section>
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</section>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/js/bs-init.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <style>
+            /* Fallback for carousel arrow icons if not visible */
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+                background-color: #007580;
+                border-radius: 50%;
+                background-size: 60% 60%;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 2.5rem;
+                height: 2.5rem;
+                opacity: 0.85;
+            }
+            .footer-dark ul li a:hover {
+        text-decoration: underline;
+    }
+    .col p:hover {
+        text-decoration: underline;
+    }
+        </style>
+        <script>
+            // Manually initialize carousel if needed
+            document.addEventListener('DOMContentLoaded', function() {
+                var carouselEl = document.getElementById('testimonialsCarousel');
+                if (carouselEl && typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+                    new bootstrap.Carousel(carouselEl, { interval: false });
+                }
+            });
+        </script>
 </body>
 
 </html>
