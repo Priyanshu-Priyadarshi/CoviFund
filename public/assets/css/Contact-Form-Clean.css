@@ -1,3 +1,30 @@
+/* Stylish glassmorphic effect for contact form box only */
+.contact-glassbox {
+  background: rgba(255,255,255,0.10) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border-radius: 18px !important;
+  padding: 32px 24px !important;
+  max-width: 400px;
+  width: 100%;
+}
+/* Reverted to original simple contact form styles */
+@media (max-width: 767px) {
+  .contact-clean {
+    padding: 10px 0;
+    min-height: 100vh;
+    background-size: cover !important;
+  }
+  .contact-form {
+    width: 98vw !important;
+    max-width: 98vw !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06) !important;
+  }
+}
 .contact-clean {
   background: #f1f7fc;
   padding: 80px 0;

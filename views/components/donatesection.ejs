@@ -1,0 +1,35 @@
+<!-- Professional Donate Section (with live COVID-19 data) -->
+<div id="donate-section" style="max-width: 1000px; margin: 12px auto; display: flex; flex-direction: row; gap: 40px; justify-content: center; align-items: stretch; flex-wrap: wrap; background: linear-gradient(135deg, #e3f2fd, #ffffff); border-radius: 18px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); padding: 40px;">
+    <!-- Donate Card -->
+    <div class="donate-glass-card" style="flex: 1 1 340px; min-width: 320px; max-width: 480px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(255,255,255,0.9); box-shadow: 0 8px 24px rgba(0,117,128,0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1.5px solid rgba(0,117,128,0.15); border-radius: 22px; padding: 32px; transition: transform 0.3s, box-shadow 0.3s;">
+      <div style="background: linear-gradient(135deg, #007580 60%, #fed049 100%); width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,117,128,0.2);">
+        <i class="fas fa-hand-holding-heart" style="font-size: 2.1rem; color: #fff;"></i>
+      </div>
+      <h2 style="font-weight: 800; color: #007580; letter-spacing: 1px; margin-bottom: 12px;">Support CoviFund</h2>
+      <h4 style="font-weight: 600; color: #222; margin-bottom: 16px;">Donate to help people worst-hit by COVID-19</h4>
+      <p style="color: #444; font-size: 1.1rem; margin-bottom: 24px; text-align: center;">Your contribution can provide oxygen, food, and medical aid to those in need. Every donation, big or small, makes a difference.</p>
+      <form autocomplete="off" id="donate-btn-standalone" style="display:inline-block; margin-bottom: 0;">
+        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HVypc3joAdyPha" async> </script>
+      </form>
+      <div style="margin-top: 16px; color: #007580; font-size: 1rem; font-weight: 500; opacity: 0.85;">100% of your donation goes to COVID-19 relief efforts.</div>
+    </div>
+    <!-- COVID Stats Card -->
+    <div class="donate-glass-card" style="flex: 1 1 340px; min-width: 320px; max-width: 480px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(255,255,255,0.9); box-shadow: 0 8px 24px rgba(0,117,128,0.1); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1.5px solid rgba(0,117,128,0.15); border-radius: 22px; padding: 32px; transition: transform 0.3s, box-shadow 0.3s;">
+      <div style="font-size: 1.25rem; font-weight: 700; color: #007580; margin-bottom: 16px; letter-spacing: 1px;">COVID-19 India Stats</div>
+      <% if (typeof covidStats !== 'undefined' && covidStats) { %>
+        <div style="display: flex; flex-direction: column; gap: 12px; width: 100%; align-items: flex-start;">
+          <div><span style="font-weight: 600; color: #222;">Total Cases:</span> <span style="color: #d35400; font-weight: 700;"> <%= covidStats.total.toLocaleString() %></span></div>
+          <div><span style="font-weight: 600; color: #222;">Active:</span> <span style="color: #007580; font-weight: 700;"> <%= covidStats.active.toLocaleString() %></span></div>
+          <div><span style="font-weight: 600; color: #222;">Discharged:</span> <span style="color: #27ae60; font-weight: 700;"> <%= covidStats.discharged.toLocaleString() %></span></div>
+          <div><span style="font-weight: 600; color: #222;">Deaths:</span> <span style="color: #c0392b; font-weight: 700;"> <%= covidStats.deaths.toLocaleString() %></span></div>
+          <div><span style="font-weight: 600; color: #222;">Indian Cases:</span> <span style="color: #007580; font-weight: 700;"> <%= covidStats.confirmedCasesIndian.toLocaleString() %></span></div>
+          <div><span style="font-weight: 600; color: #222;">Foreign Cases:</span> <span style="color: #007580; font-weight: 700;"> <%= covidStats.confirmedCasesForeign.toLocaleString() %></span></div>
+          <% if (covidStats.lastRefreshed) { %>
+            <div style="font-size: 0.95rem; color: #888; margin-top: 8px;">Last updated: <%= new Date(covidStats.lastRefreshed).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' }) %></div>
+          <% } %>
+        </div>
+      <% } else { %>
+        <div style="color: #888; font-size: 1.05rem; text-align: center;">Live data unavailable at the moment.</div>
+      <% } %>
+    </div>
+</div>
