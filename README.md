@@ -8,10 +8,19 @@
 
 ## Screenshots
 
-![Home](https://user-images.githubusercontent.com/85646974/137100255-afc07a64-709e-49ad-9ee8-3e5bccbfbc5a.png)
-![Donate](https://user-images.githubusercontent.com/85646974/137100517-72fbac33-3cf1-426b-b093-3f07e978a80f.png)
-![Support](https://user-images.githubusercontent.com/85646974/137100591-c5214fc7-35e5-4b77-9635-9d6bc0f65092.png)
-![About](https://user-images.githubusercontent.com/85646974/137100622-c86c4e8c-a66a-4337-b9e0-288e56f99eff.png)
+![frontpage](images/Frontpage.jpg)
+![donatedashboard](images/Doanteddashboard.png)
+![precautions](images/precautions.png)
+![testimonials](images/testimonials.png)
+![press](images/press.png)
+![media](images/media.png)
+![aboutus](images/aboutus.png)
+![contactus](images/contactus.png)
+![contactus](images/PaymentGateway_1.png)
+![Payment1](images/PaymentGateway_2.png)
+![Payment2](images/PaymentGateway_3.png)
+![Payment3](images/PaymentGateway_4.png)
+
 
 ---
 
